@@ -1,12 +1,6 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /app
-permissions:
-  - object: /app/scripts
-    pattern: "*.sh"
-    mode: 755
+
 hooks:
   ApplicationStop:
     - location: scripts/stop_container.sh
